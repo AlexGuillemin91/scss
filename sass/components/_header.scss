@@ -1,0 +1,65 @@
+@import '../helpers/variables.scss';
+
+.debut{
+    background-image: url('../../assets/img/wave.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-family: $font-main;
+
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    
+        .logo{
+            display: flex;
+            align-items: flex-end;
+    
+            h3{
+                font-size: $font-h3;
+                font-weight: $weight-h3;
+                color: $grey;
+            }
+        }
+
+        .nav{
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                text-transform: uppercase;
+    
+                li{
+                    padding: 0 1em;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: $palier-header){
+    .debut{
+        background-size: 60%;
+    }
+}
+
+@media(max-width: $palier-header-disparition){
+    .debut{
+        background-image: none;
+
+        header{
+            .nav{
+                margin-top: 2em;
+                ul{
+                    li{
+                        padding: 0 0.5em;
+                        color: $primary-blue;
+                    }
+                }
+            }
+        }
+    }
+}

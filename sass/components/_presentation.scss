@@ -1,0 +1,67 @@
+@import '../helpers/variables.scss';
+
+.presentation{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    article{
+        background-image: url('../../assets/img/background-we-are.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-main;
+
+        div{
+            display: inline-block;
+            width: 75%;
+
+            h2{
+                font-size: $font-h2;
+            }
+            p{
+                margin-bottom: 1em;
+                font-size: $font-p;
+            }
+        }
+    }
+}
+
+@media(max-width: $palier-presentation){
+    .presentation{
+        article{
+            width: 100%;
+            margin-bottom: 2rem;
+
+            div{
+                width: 100%;
+                padding: 1rem;
+
+                span{
+                    text-align: center;
+                }
+                button{
+                    float: right;
+                }
+            }
+        }
+
+        aside{
+            margin: auto;
+        }
+    }
+}
+
+@media(max-width: $tel){
+    .presentation{
+        aside{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

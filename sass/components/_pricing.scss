@@ -1,0 +1,46 @@
+@import '../helpers/variables.scss';
+
+.pricing{
+    background-color: $opa-blue;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: $font-main;
+
+    h2{
+        font-size: $font-h2;
+    }
+
+    .price-offer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+
+        article{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: white;
+            border-radius: 26px;
+            width: 21rem;
+            height: 27rem;
+            margin: 1rem;
+
+            h5{
+                margin: 2em 0;
+                font-size: $font-h5;
+                font-weight: $weight-h5;
+            }
+            p{
+                font-size: $font-p;
+                padding: 0 1.5em;
+                margin-bottom: 2em;
+            }
+            button{
+                width: fit-content;
+                margin: auto;
+            }
+        }
+    }
+}

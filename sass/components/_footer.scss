@@ -1,0 +1,123 @@
+@import './helpers/variables.scss';
+
+footer{
+    background-image: url(../../assets/img/footer.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+    font-family: $font-main;
+
+    .resume{
+        margin-left: 3rem;
+        text-align: center;
+
+        h6{
+            font-size: $font-h2;
+            font-weight: $weight-h5;
+            margin-bottom: 0.5em;
+        }
+        p{
+            font-size: $font-h3;
+            margin: 0.5em 0;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+
+            li{
+                padding: 0 1.3em;
+                color: white;
+            }
+        }
+    }
+
+
+    .links{
+        p{
+            margin-bottom: 1em;
+            font-size: $font-h5;
+        }
+        ul{
+            list-style: none;
+            
+            li{
+                padding: 0.5em 0;
+            }
+        }
+    }
+
+    .horaire{
+        p{
+            margin-bottom: 1em;
+            font-size: $font-h5;
+        }
+        div{
+            display: flex;
+            flex-wrap: nowrap;
+            ul{
+                list-style: none;
+                
+                li{
+                    padding: 0.5em 0;
+                }
+            }
+            ul:last-child{
+                li{
+                    padding-left: 0.5em;
+                }
+            }
+        }
+    }
+
+    .contact{
+        margin-right: 3rem;
+
+        p{
+            margin-bottom: 1em;
+            font-size: $font-h5;
+        }
+        ul{
+            list-style: none;
+            
+            li{
+                padding: 0.5em 0;
+            }
+            li:last-child{
+                padding: 1.5em 0;
+            }
+        }
+    }
+}
+
+@media(max-width: $palier-footer){
+    footer{
+        background-image: none;
+        background-color: $primary-blue;
+        padding-top: 5rem;
+    }
+}
+
+@media(max-width: $tel){
+    footer{
+        background-image: none;
+        background-color: $primary-blue;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 3rem;
+
+        section{
+            padding-bottom: 2em;
+        }
+        .resume{
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import '../helpers/variables.scss';
+
+%span{
+    color: $third-blue;
+}
+
+span{
+    @extend %span;
+}
+
+.montant{
+    @extend %span;
+    font-size: $font-price;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,29 @@
+@import './helpers/variables.scss';
+
+.formulaire{
+    margin: 3rem 0;
+    text-align: center;
+    font-family: $font-main;
+
+    p{
+        font-size: $font-h5;
+        margin-bottom: 0.5em;
+    }
+    .reponse{
+        border: none;
+        background-color: $color-form;
+        font-size: $font-form;
+        padding: 1em 2em;
+        width: 26.875rem;
+        border-radius: 3px;
+        margin-right: 1em;
+    }
+}
+
+@media(max-width: $tel){
+    .formulaire{
+        .reponse{
+            width: 15rem;
+        }
+    }
+}

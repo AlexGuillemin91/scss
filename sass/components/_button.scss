@@ -1,0 +1,31 @@
+@import '../helpers/variables.scss';
+
+%button{
+    border-radius: 25px;
+    outline: none;
+    margin-top: 1em;
+    font-family: $font-main;
+}
+
+.button{
+    @extend %button;
+    padding: 0.5em 3em;
+    background: linear-gradient(to right, $primary-blue 50%, $secondary-blue);
+    color: $white;
+    border: none;
+}
+
+.petitbutton{
+    @extend %button;
+    padding: 0.5em 1em;
+    background: linear-gradient(to right, $primary-blue 50%, $secondary-blue);
+    color: $white;
+    border: none;
+}
+
+.price-button{
+    @extend %button;
+    padding: 0.5em 3em;
+    background-color: white;
+    border: 1px solid #1000ff;
+}

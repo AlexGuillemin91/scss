@@ -1,0 +1,83 @@
+@import '../helpers/variables.scss';
+
+.offers{
+    margin-top: 5rem;
+    font-family: $font-main;
+
+    .entete{ 
+        margin-left: 8rem;
+
+        h2{
+            font-size: $font-h2;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .offre{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 3em;
+        background-image: url('../../assets/img/background-service.png');
+
+        article{
+            display: flex;
+            flex-direction: column;
+            width: 20rem;
+            background-color: white;
+            height: 23rem;
+            margin: 1em 2em;
+            padding: 0 1em;
+            border-radius: 36px;
+            font-size: $font-offre;
+            box-shadow: $shadow-offer;
+
+            .img-titre{
+                text-align: center;
+
+                h4{
+                    margin: 1em 0;
+                    text-align: start;
+                }
+            }
+
+            .description{
+                flex: 1 1;
+
+                p{
+                    margin: 1em 0 0 0;
+                    text-align: start;
+                    color : $grey;
+                    font-family: $font-secondary;
+                }
+            }
+            
+            .action{
+                display: flex;
+                justify-content: flex-end;
+
+                button{
+                    margin: 1em 2em 1em 0;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: $tel){
+    .offers{
+        .entete{
+            margin: 0;
+            text-align: center;
+        }
+
+        .offre{
+            padding: 0;
+
+            article{
+                width: 25rem;
+            }
+        }
+    }
+}
